@@ -17,7 +17,7 @@ paths:
     get:
       tags:
       - "course"
-      summary: List of the passed courses
+      summary: List of the courses
       operationId: GetCourses
       description: "List of the courses"
       produces:
@@ -57,7 +57,7 @@ paths:
       tags:
       - "course"
       summary: New list of courses
-      operationId: NewPassedCourses
+      operationId: Newourses
       description: New list of courses
       produces:
       - "application/json"
