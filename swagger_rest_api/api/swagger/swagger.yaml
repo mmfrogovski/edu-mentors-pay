@@ -1,0 +1,164 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Top Courses App
+host: localhost:10010
+basePath: /api/v1
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /Courses:
+    x-swagger-router-controller: get_products
+    get:
+      tags:
+      - "course"
+      summary: List of the passed courses
+      operationId: GetCourses
+      description: "List of the courses"
+      produces:
+      - "application/json"
+      parameters:
+        - name: Course name
+          in: query
+          description: Name of the course
+          type: string
+        - name: Creator of the course
+          in: query
+          description: Name of the creator of the course
+          type: string
+        - name: completion date
+          in: query
+          description: Completion date of the course
+          type: string
+        - name: rate
+          in: query
+          description: Rating of the course
+          type: string
+
+      responses:
+        200:
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Courses"
+            xml:
+              name: courses
+        500:
+          description: An unexpected error occured.
+          schema:
+            $ref: "#/definitions/Error"
+    put:
+      tags:
+      - "course"
+      summary: New list of courses
+      operationId: NewPassedCourses
+      description: New list of courses
+      produces:
+      - "application/json"
+      parameters:
+        - name: Course name
+          in: query
+          description: Name of the course
+          type: string
+        - name: Creator of the course
+          in: query
+          description: Name of the creator of the course
+          type: string
+        - name: completion date
+          in: query
+          description: Completion date of the course
+          type: string
+        - name: rate
+          in: query
+          description: The rating of the course
+          type: string
+
+      responses:
+        200:
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Courses"
+            xml:
+              name: courses
+        500:
+          description: An unexpected error occured.
+          schema:
+            $ref: "#/definitions/Error"
+
+  /Courses/{Coursename}:
+    x-swagger-router-controller: get_products
+    post:
+      tags:
+      - "course"
+      summary: Add new course
+      operationId: addByCourseName
+      description: Add data of new course
+      produces:
+      - "application/json"
+      parameters:
+        - name: "Coursename"
+          in: "path"
+          description: "The name that needs to be fetched. "
+          required: true
+          type: "string"
+        - name: Course name
+          in: query
+          description: Name of the course
+          type: string
+        - name: Creator of the course
+          in: query
+          description: Name of the creator of the course
+          type: string
+        - name: completion date
+          in: query
+          description: Completion date of the course
+          type: string
+        - name: rate
+          in: query
+          description: Rating of the course
+          type: string
+
+      responses:
+        200:
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Courses"
+        500:
+          description: An unexpected error occured.
+          schema:
+            $ref: "#/definitions/Error"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+
+definitions:
+  Courses:
+      type: object
+      properties:
+        course name:
+          type: string
+          description: Name of the course
+        the creator of the course:
+          type: string
+          description: Name of the creator of the course
+        completion date:
+          type: string
+          description: Completion date of the course
+        rating:
+          type: string
+          description: Rating of the course
+  Error:
+    required:
+      - message
+    properties:
+      message:
+        type: string

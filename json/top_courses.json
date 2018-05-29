@@ -1,0 +1,25 @@
+{
+	"top_courses":[
+{
+	"id":"29",
+	"course_name":"New_cours",
+	"author":"Dmitriy Ageev",
+	"creation_date":"23.05.18",
+	"rate":"3/5"
+},
+{
+	"id":"38",
+	"course_name":"New_cours2",
+	"author":"Alexandr Volkov",
+	"creation_date":"27.05.18",
+	"rate":"2/5"
+},
+{
+	"id":"4",
+	"course_name":"Hearthstone_courses",
+	"author":"Maxim Marchenko",
+	"creation_date":"27.05.18",
+	"rate":"1/5"
+}
+]
+}
