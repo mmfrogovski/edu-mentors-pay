@@ -1,0 +1,86 @@
+{
+    "0": {
+        "place": "arts",
+        "rate": "5",
+        "name": "Artur",
+        "age": "28",
+        "city": "Minsk"
+    },
+    "1": {
+        "place": "arts",
+        "rate": "4",
+        "name": "Alex",
+        "age": "24",
+        "city": "Moscow"
+    },
+    "2": {
+        "place": "arts",
+        "rate": "4",
+        "name": "John",
+        "age": "30",
+        "city": "Minsk"
+    },
+    "3": {
+        "place": "arts",
+        "rate": "2",
+        "name": "Max",
+        "age": "22",
+        "city": "Minsk"
+    },
+    "4": {
+        "place": "parks",
+        "rate": "4",
+        "name": "Tanya",
+        "age": "23",
+        "city": "Moscow"
+    },
+    "5": {
+        "place": "parks",
+        "rate": "4",
+        "name": "Borya",
+        "age": "24",
+        "city": "Minsk"
+    },
+    "6": {
+        "place": "parks",
+        "rate": "2",
+        "name": "Anton",
+        "age": "26",
+        "city": "Minsk"
+    },
+    "7": {
+        "place": "parks",
+        "rate": "5",
+        "name": "Den",
+        "age": "33",
+        "city": "Minsk"
+    },
+    "8": {
+        "place": "clubs",
+        "rate": "4",
+        "name": "Vova",
+        "age": "19",
+        "city": "Minsk"
+    },
+    "9": {
+        "place": "clubs",
+        "rate": "1",
+        "name": "Gaben",
+        "age": "24",
+        "city": "Moscow"
+    },
+    "10": {
+        "place": "clubs",
+        "rate": "2",
+        "name": "Kirill",
+        "age": "23",
+        "city": "Minsk"
+    },
+    "11": {
+        "place": "clubs",
+        "rate": "3",
+        "name": "Fedor",
+        "age": "28",
+        "city": "Moscow"
+    }
+}

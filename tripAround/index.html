@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WORK</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container wrapper-row">
+        <div class="block-main wrapper-row">
+
+            <div class="block-place-col wrapper-col">
+                <h2 class="place">Clubs</h2>
+                <div class="block-guides wrapper-col" id="clubs-col">
+                    <div id="react-clubs" class="react-container"></div>
+                </div>
+            </div>
+
+            <div class="block-place-col wrapper-col">
+                <h2 class="place">Arts</h2>
+                <div class="block-guides wrapper-col" id="arts-col">
+                    <div id="react-arts" class="react-container"></div>
+                </div>
+            </div>
+
+            <div class="block-place-col wrapper-col">
+                <h2 class="place">Parks</h2>
+                <div class="block-guides wrapper-col" id="parks-col">
+                    <div id="react-parks" class="react-container"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block-filter wrapper-row">
+
+            <div class="filter-params wrapper-col">
+                <h2>Filter</h2>
+                <div class="block-param">
+                    <div class="wrapper-row">
+                        <h3>City:</h3>
+                        <input type="text" class="city-input" oninput="cityInput()">
+                    </div>
+                </div>
+                <div class="block-param">
+                    <div class="wrapper-row">
+                        <h3>Age:</h3>
+                        <input class="range" type="range" min="0" max="50" step="1" value="18" oninput="rangeInputAge()">
+                        <p class="value"></p>
+                    </div>
+                </div>
+                <div class="block-param">
+                    <div class="wrapper-row">
+                        <h3>Rate:</h3>
+                        <input class="range" type="range" min="0" max="5" step="1" value="5" oninput="rangeInputRate()">
+                        <p class="value"></p>
+                    </div>
+                </div>
+                <div class="button-send" onclick="filterGuiders()">
+                    Find!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
